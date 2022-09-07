@@ -107,7 +107,7 @@
    &kp BKSP &none    &none    &none     &none     &none     &none &none &none &none &none &none
    &none    &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none     &none &none &none &none &none &none
    &none    &none     &none    &none    &none     &none     &none &none &none &none &none &none
-                                      &none &none &none     &kp K_VOL_UP &kp K_MUTE &kp K_VOL_Dn
+                                      &none &none &none     &kp K_VOL_UP &kp K_MUTE &kp K_VOL_DN
                         >;
                 };
                 
