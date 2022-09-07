@@ -92,7 +92,7 @@
    &kp BKSP &none    &none    &none     &none     &none     &none    &kp K_UNDO &kp K_CUT &kp K_COPY &kp K_PASTE &kp BSPC
    &none    &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none     &kp CAPS &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT   &none
    &none    &none     &none    &none    &none     &none     &kp INS  &kp HOME   &kp PG_UP &kp PG_DN  &kp END     &none
-                              &kp K_MENU &kp SPC &kp TAB    &kp ENTER &kp BKSP &kp DEL
+                                      &none &none &none     &kp ENTER &kp BKSP &kp DEL
                         >;
                 };
                 
@@ -107,7 +107,7 @@
    &kp BKSP &none    &none    &none     &none     &none     &none &none &none &none &none &none
    &none    &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none     &none &none &none &none &none &none
    &none    &none     &none    &none    &none     &none     &none &none &none &none &none &none
-                              &kp K_MENU &kp SPC &kp TAB    &kp K_VOL_UP &kp K_MUTE &kp K_VOL_Dn
+                                      &none &none &none     &kp K_VOL_UP &kp K_MUTE &kp K_VOL_Dn
                         >;
                 };
         };
