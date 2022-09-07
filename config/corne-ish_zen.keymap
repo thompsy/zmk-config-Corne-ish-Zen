@@ -80,35 +80,5 @@
                               &kp K_MENU &kp SPC &kp TAB        &none  &none   &none
                         >;
                 };
-                
-                nav_layer {
-                        label = "Nav";
-// -----------------------------------------------------------------------------------------
-// | BKSP |      |      |       |       |    |        |        | UNDO | CUT   | COPY  | PASTE | BKSP |
-// |      | LGUI | LALT | LCTRL | LSHFT |    |  GAP   | CAPS   | LEFT | DOWN  | UP    | RIGHT |      |
-// |      |      |      |       |       |    |        | INSERT | HOME | PG_UP | PG_DN | END   |      |
-//                          |     |     |    |        | ENTER  | BKSP | DEL   |
-                        bindings = <
-   &kp BKSP &none    &none    &none     &none     &none     &none    &kp K_UNDO &kp K_CUT &kp K_COPY &kp K_PASTE &kp BSPC
-   &none    &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none     &kp CAPS &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT   &none
-   &none    &none     &none    &none    &none     &none     &kp INS  &kp HOME   &kp PG_UP &kp PG_DN  &kp END     &none
-                                      &none &none &none     &kp ENTER &kp BKSP &kp DEL
-                        >;
-                };
-                
-                media_layer {
-                        label = "Media";
-// -----------------------------------------------------------------------------------------
-// | BKSP |      |      |       |       |    |        |    |    |    |    |    |    |
-// |      | LGUI | LALT | LCTRL | LSHFT |    |  GAP   |    |    |    |    |    |    |
-// |      |      |      |       |       |    |        |    |    |    |    |    |    |
-//                          |     |     |    |        | VOL_UP   | MUTE | VOL_DN |
-                        bindings = <
-   &kp BKSP &none    &none    &none     &none     &none     &none &none &none &none &none &none
-   &none    &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none     &none &none &none &none &none &none
-   &none    &none     &none    &none    &none     &none     &none &none &none &none &none &none
-                                      &none &none &none     &kp K_VOL_UP &kp K_MUTE &kp K_VOL_Dn
-                        >;
-                };
         };
 };
