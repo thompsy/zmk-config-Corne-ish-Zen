@@ -43,7 +43,7 @@
 // | SHFT |  %  |  1  |  2  |  3  |  +  |   |     |     |     |     |     |      |
 //                    | DOT |  0  |  =  |   |     |     |     |
                         bindings = <
-   &kp TAB    &kp DLLR  &kp N7 &kp N8 &kp N9 &kp STAR      &none  &none     &none     &sv      &none    &kp BSPC
+   &kp TAB    &kp DLLR  &kp N7 &kp N8 &kp N9 &kp STAR      &none  &none     &none     &none    &none    &kp BSPC
    &kp LCTRL  &kp FSLH  &kp N4 &kp N5 &kp N6 &kp MINUS     &none  &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &none
    &kp LSHFT  &kp PRCNT &kp N1 &kp N2 &kp N3 &kp PLUS      &none  &none     &none     &none    &none    &none
                               &kp DOT &kp N0 &kp EQUAL     &none  &none   &none
