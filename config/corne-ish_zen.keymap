@@ -29,10 +29,10 @@
 // | SHFT |  Z  |  X  |  C  |  D  |  V  |     |  K  |  H   |  ,  |  .  |  /  | ESC  |
 //                    | ESC | ENT | TAB |     | BSPC| SPC  | DEL |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp F &kp P &kp B     &kp J &kp L  &kp U     &kp Y   &kp SQT  &kp BSPC
-   &kp LCTRL &kp A &kp R &kp S &kp T &kp G     &kp M &kp N  &kp E     &kp I   &kp O    &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp D &kp V     &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp ESC
-         &kp ESC &lt NAV_LAYER RET &kp TAB     &lt SYMBOL_LAYER BSPC &lt NUMBER_LAYER SPC &lt FUNC_LAYER DEL
+   &kp TAB   &kp Q &kp W &kp F &kp P &kp B          &kp J &kp L  &kp U     &kp Y   &kp SQT  &kp BSPC
+   &kp LCTRL &kp A &kp R &kp S &kp T &kp G          &kp M &kp N  &kp E     &kp I   &kp O    &kp SQT
+   &kp LSHFT &kp Z &kp X &kp C &kp D &kp V          &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp ESC
+   &lt MEDIA_LAYER ESC &lt NAV_LAYER RET &kp TAB    &lt SYMBOL_LAYER BSPC &lt NUMBER_LAYER SPC &lt FUNC_LAYER DEL
                         >;
                 };
                 
@@ -93,6 +93,21 @@
    &none    &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none     &kp CAPS &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT   &none
    &none    &none     &none    &none    &none     &none     &kp INS  &kp HOME   &kp PG_UP &kp PG_DN  &kp END     &none
                                       &none &none &none     &kp ENTER &kp BKSP &kp DEL
+                        >;
+                };
+                
+                media_layer {
+                        label = "Media";
+// -----------------------------------------------------------------------------------------
+// | BKSP |      |      |       |       |    |        |    |    |    |    |    |    |
+// |      | LGUI | LALT | LCTRL | LSHFT |    |  GAP   |    |    |    |    |    |    |
+// |      |      |      |       |       |    |        |    |    |    |    |    |    |
+//                          |     |     |    |        | VOL_UP   | MUTE | VOL_DN |
+                        bindings = <
+   &kp BKSP &none    &none    &none     &none     &none     &none &none &none &none &none &none
+   &none    &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none     &none &none &none &none &none &none
+   &none    &none     &none    &none    &none     &none     &none &none &none &none &none &none
+                                      &none &none &none     &kp K_VOL_UP &kp K_MUTE &kp K_VOL_Dn
                         >;
                 };
                 
