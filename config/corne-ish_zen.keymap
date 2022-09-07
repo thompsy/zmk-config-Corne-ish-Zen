@@ -10,12 +10,12 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
-#define NUM 1
-#define SYMBOl 2
-#define FUNC 3
-#define NAV 4
-#define MEDIA 5
-#define GAMING 6
+#define NUMBER_LAYER 1
+#define SYMBOL_LAYER 2
+#define FUNC_LAYER 3
+#define NAV_LAYER 4
+#define MEDIA_LAYER 5
+#define GAMING_LAYER 6
 
 / {
         keymap {
@@ -32,7 +32,22 @@
    &kp TAB   &kp Q &kp W &kp F &kp P &kp B     &kp J &kp L  &kp U     &kp Y   &kp SQT  &kp BSPC
    &kp LCTRL &kp A &kp R &kp S &kp T &kp G     &kp M &kp N  &kp E     &kp I   &kp O    &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp D &kp V     &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp ESC
-         &kp ESC &kp RET &kp TAB     &kp BSPC &kp SPC &kp DEL
+         &kp ESC &kp RET &kp TAB     &kp BSPC &lt NUMBER_LAYER SPC &kp DEL
+                        >;
+                };
+                
+                number_layer {
+                        label = "Number";
+// -----------------------------------------------------------------------------------------
+// |  TAB |  $  |  7  |  8  |  9  |  *  |     |     |     |     |     |     | BKSP |
+// | CTRL |  /  |  4  |  5  |  6  |  -  |     |     |LSHFT|LCTRL| LALT| LGUI|      |
+// | SHFT |  %  |  1  |  2  |  3  |  +  |     |     |     |     |     |     |      |
+//                    | DOT |  0  |  =  |     |     |     |     |
+                        bindings = <
+   &kp TAB    &kp DLLR  &kp N7 &kp N8 &kp N9 &kp STAR      &none  &none     &none     &none    &none    &kp BSPC
+   &kp LCTRL  &kp FSLH  &kp N4 &kp N5 &kp N6 &kp MINUS     &none  &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &none
+   &kp LSHFT  &kp PRCNT &kp N1 &kp N2 &kp N3 &kp PLUS      &none  &none     &none     &none    &none    &none
+                              &kp DOT &kp N0 &kp EQUAL     &none  &none   &none
                         >;
                 };
                 
