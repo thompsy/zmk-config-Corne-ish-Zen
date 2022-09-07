@@ -18,6 +18,20 @@
 #define GAMING_LAYER 6
 
 / {
+
+        behaviors {
+            // Taken from Option 3 on https://zmk.dev/docs/behaviors/hold-tap
+            bhm: balanced_homerow_mods {
+                compatible = "zmk,behavior-hold-tap";
+                label = "HOMEROW_MODS";
+                #binding-cells = <2>;
+                tapping-term-ms = <200>;    // <---[[moderate duration]]
+                quick-tap-ms = <0>;
+                flavor = "balanced";
+                bindings = <&kp>, <&kp>;
+            };
+        };
+        
         keymap {
                 compatible = "zmk,keymap";
 
@@ -29,10 +43,10 @@
 // | SHFT |  Z  |  X  |  C  |  D  |  V  |     |  K  |  H   |  ,  |  .  |  /  | ESC  |
 //                    | ESC | ENT | TAB |     | BSPC| SPC  | DEL |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp F &kp P &kp B          &kp J &kp L  &kp U     &kp Y   &kp SQT  &kp BSPC
-   &kp LCTRL &kp A &kp R &kp S &kp T &kp G          &kp M &kp N  &kp E     &kp I   &kp O    &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp D &kp V          &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp ESC
-   &lt MEDIA_LAYER ESC &lt NAV_LAYER RET &kp TAB    &lt SYMBOL_LAYER BSPC &lt NUMBER_LAYER SPC &lt FUNC_LAYER DEL
+   &kp TAB   &kp Q &kp W &kp F &kp P &kp B                                    &kp J &kp L         &kp U            &kp Y         &kp SQT        &kp BSPC
+   &kp LCTRL &bhm LGUI A &bhm LALT R &bhm LCTRL S &bhm LSHFT T &kp G          &kp M &bhm LSHFT N  &bhm LCTRl E     &bhm LALT I   &bhm LGUI O    &kp SQT
+   &kp LSHFT &kp Z &kp X &kp C &kp D &kp V                                    &kp K &kp H         &kp COMMA        &kp DOT       &kp FSLH       &kp ESC
+   &lt MEDIA_LAYER ESC &lt NAV_LAYER RET &kp TAB                              &lt SYMBOL_LAYER BSPC &lt NUMBER_LAYER SPC &lt FUNC_LAYER DEL
                         >;
                 };
                 
