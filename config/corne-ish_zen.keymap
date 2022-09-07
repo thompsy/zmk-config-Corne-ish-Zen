@@ -32,7 +32,7 @@
    &kp TAB   &kp Q &kp W &kp F &kp P &kp B     &kp J &kp L  &kp U     &kp Y   &kp SQT  &kp BSPC
    &kp LCTRL &kp A &kp R &kp S &kp T &kp G     &kp M &kp N  &kp E     &kp I   &kp O    &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp D &kp V     &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp ESC
-         &kp ESC &kp RET &kp TAB     &kp BSPC &lt NUMBER_LAYER SPC &kp DEL
+         &kp ESC &kp RET &kp TAB     &lt SYMBOL_LAYER BSPC &lt NUMBER_LAYER SPC &kp DEL
                         >;
                 };
                 
@@ -59,7 +59,7 @@
 // | SHFT |  ;  |  }  |  ]  |  )  |  |  |   |     |     |     |     |     |      |
 //                    |  ^  |  `  |  =  |   |     |     |     |
                         bindings = <
-   &kp TAB    &kp BSLH  &kp AMPS &kp AT   &kp TILDA &kp EXCL     &none  &none     &none     &none    &none    &kp BSPC
+   &kp TAB    &kp BSLH  &kp AMPS &kp AT   &kp TILDE &kp EXCL     &none  &none     &none     &none    &none    &kp BSPC
    &kp LCTRL  &kp COLON &kp LBRC &kp LBKT &kp LPAR  &kp HASH     &none  &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &none
    &kp LSHFT  &kp SEMI  &kp RBRC &kp RBKT &kp RPAR  &kp PIPE     &none  &none     &none     &none    &none    &none
                                &kp CARET &kp GRAVE &kp EQUAL     &none  &none   &none
