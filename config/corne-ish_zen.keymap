@@ -39,13 +39,13 @@
                         label = "Colemak";
 // -----------------------------------------------------------------------------------------
 // |  ALT |  Q  |  W  |  F  |  P  |  B  |     |  J  |  L   |  U  |  Y  |  '  | ALT  |
-// | CTRL |  A  |  R  |  S  |  T  |  G  |     |  M  |  N   |  E  |  I  |  O  | CTRL |
-// | SHFT |  Z  |  X  |  C  |  D  |  V  |     |  K  |  H   |  ,  |  .  |  /  | SHFT |
+// | SHFT |  A  |  R  |  S  |  T  |  G  |     |  M  |  N   |  E  |  I  |  O  | SHFT |
+// | CTRL |  Z  |  X  |  C  |  D  |  V  |     |  K  |  H   |  ,  |  .  |  /  | CTRL |
 //                    | ESC | ENT | TAB |     | BSPC| SPC  | DEL |
                         bindings = <
    &kp LALT  &kp Q       &kp W       &kp F        &kp P        &kp B          &kp J &kp L         &kp U            &kp Y         &kp SQT        &kp LALT
-   &kp LCTRL &bhm LGUI A &bhm LALT R &bhm LCTRL S &bhm LSHFT T &kp G          &kp M &bhm LSHFT N  &bhm LCTRL E     &bhm LALT I   &bhm LGUI O    &kp LCTRL
-   &kp LSHFT &kp Z       &kp X       &kp C        &kp D        &kp V          &kp K &kp H         &kp COMMA        &kp DOT       &kp FSLH       &kp LSHFT
+   &kp LSHFT &bhm LGUI A &bhm LALT R &bhm LCTRL S &bhm LSHFT T &kp G          &kp M &bhm LSHFT N  &bhm LCTRL E     &bhm LALT I   &bhm LGUI O    &kp LSHFT
+   &kp LCTRL &kp Z       &kp X       &kp C        &kp D        &kp V          &kp K &kp H         &kp COMMA        &kp DOT       &kp FSLH       &kp LCTRL
    &lt MEDIA_LAYER ESC &lt NAV_LAYER RET &kp TAB                              &lt SYMBOL_LAYER BSPC &lt NUMBER_LAYER SPC &lt FUNC_LAYER DEL
                         >;
                 };
