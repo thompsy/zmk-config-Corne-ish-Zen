@@ -38,14 +38,14 @@
                 default_layer {
                         label = "Colemak";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  F  |  P  |  B  |     |  J  |  L   |  U  |  Y  |  '  | BKSP |
-// | CTRL |  A  |  R  |  S  |  T  |  G  |     |  M  |  N   |  E  |  I  |  O  |  '   |
-// | SHFT |  Z  |  X  |  C  |  D  |  V  |     |  K  |  H   |  ,  |  .  |  /  | ESC  |
+// |  ALT |  Q  |  W  |  F  |  P  |  B  |     |  J  |  L   |  U  |  Y  |  '  | ALT  |
+// | CTRL |  A  |  R  |  S  |  T  |  G  |     |  M  |  N   |  E  |  I  |  O  | CTRL |
+// | SHFT |  Z  |  X  |  C  |  D  |  V  |     |  K  |  H   |  ,  |  .  |  /  | SHFT |
 //                    | ESC | ENT | TAB |     | BSPC| SPC  | DEL |
                         bindings = <
-   &kp TAB   &kp Q       &kp W       &kp F        &kp P        &kp B          &kp J &kp L         &kp U            &kp Y         &kp SQT        &kp BSPC
-   &kp LCTRL &bhm LGUI A &bhm LALT R &bhm LCTRL S &bhm LSHFT T &kp G          &kp M &bhm LSHFT N  &bhm LCTRL E     &bhm LALT I   &bhm LGUI O    &kp SQT
-   &kp LSHFT &kp Z       &kp X       &kp C        &kp D        &kp V          &kp K &kp H         &kp COMMA        &kp DOT       &kp FSLH       &kp ESC
+   &kp LALT  &kp Q       &kp W       &kp F        &kp P        &kp B          &kp J &kp L         &kp U            &kp Y         &kp SQT        &kp LALT
+   &kp LCTRL &bhm LGUI A &bhm LALT R &bhm LCTRL S &bhm LSHFT T &kp G          &kp M &bhm LSHFT N  &bhm LCTRL E     &bhm LALT I   &bhm LGUI O    &kp LCTRL
+   &kp LSHFT &kp Z       &kp X       &kp C        &kp D        &kp V          &kp K &kp H         &kp COMMA        &kp DOT       &kp FSLH       &kp LSHFT
    &lt MEDIA_LAYER ESC &lt NAV_LAYER RET &kp TAB                              &lt SYMBOL_LAYER BSPC &lt NUMBER_LAYER SPC &lt FUNC_LAYER DEL
                         >;
                 };
@@ -53,12 +53,12 @@
                 number_layer {
                         label = "Number";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  $  |  7  |  8  |  9  |  *  |     |     |     |     |     |     | BKSP |
+// |  ALT |  $  |  7  |  8  |  9  |  *  |     |     |     |     |     |     | BKSP |
 // | CTRL |  /  |  4  |  5  |  6  |  -  |     |     |LSHFT|LCTRL| LALT| LGUI|      |
 // | SHFT |  %  |  1  |  2  |  3  |  +  |     |     |     |     |     |     |      |
 //                    | DOT |  0  |  =  |     |     |     |     |
                         bindings = <
-   &kp TAB    &kp DLLR  &kp N7 &kp N8 &kp N9 &kp STAR      &none  &none     &none     &none    &none    &kp BSPC
+   &kp LALT   &kp DLLR  &kp N7 &kp N8 &kp N9 &kp STAR      &none  &none     &none     &none    &none    &kp BSPC
    &kp LCTRL  &kp FSLH  &kp N4 &kp N5 &kp N6 &kp MINUS     &none  &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &none
    &kp LSHFT  &kp PRCNT &kp N1 &kp N2 &kp N3 &kp PLUS      &none  &none     &none     &none    &none    &none
                               &kp DOT &kp N0 &kp EQUAL     &none  &none   &none
@@ -68,12 +68,12 @@
                 symbol_layer {
                         label = "Symbol";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  \  |  &  |  @  |  ~  |  !  |   |     |     |     |     |     | BKSP |
+// |  ALT |  \  |  &  |  @  |  ~  |  !  |   |     |     |     |     |     | BKSP |
 // | CTRL |  :  |  {  |  [  |  (  |  #  |   |     |LSHFT|LCTRL| LALT| LGUI|      |
 // | SHFT |  ;  |  }  |  ]  |  )  |  |  |   |     |     |     |     |     |      |
 //                    |  ^  |  `  |  =  |   |     |     |     |
                         bindings = <
-   &kp TAB    &kp BSLH  &kp AMPS &kp AT   &kp TILDE &kp EXCL     &none  &none     &none     &none    &none    &kp BSPC
+   &kp LALT   &kp BSLH  &kp AMPS &kp AT   &kp TILDE &kp EXCL     &none  &none     &none     &none    &none    &kp BSPC
    &kp LCTRL  &kp COLON &kp LBRC &kp LBKT &kp LPAR  &kp HASH     &none  &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &none
    &kp LSHFT  &kp SEMI  &kp RBRC &kp RBKT &kp RPAR  &kp PIPE     &none  &none     &none     &none    &none    &none
                                &kp CARET &kp GRAVE &kp EQUAL     &none  &none   &none
@@ -83,12 +83,12 @@
                 function_layer {
                         label = "Funct";
 // -----------------------------------------------------------------------------------------
-// |  TAB | F12 | F7  | F8  | F9  |  SysRq  |     |     |     |     |     |     | BKSP |
+// |  ALT | F12 | F7  | F8  | F9  |  SysRq  |     |     |     |     |     |     | BKSP |
 // | CTRL | F11 | F4  | F5  | F6  |  ScrlLk |     |     |LSHFT|LCTRL| LALT| LGUI|      |
 // | SHFT | F10 | F1  | F2  | F3  |  Pause  |     |     |     |     |     |     |      |
 //                    | MENU|  SPC  |  TAB  |     |     |     |     |
                         bindings = <
-   &kp TAB    &kp F12  &kp F7 &kp F8 &kp F9 &kp SYSREQ          &none  &none     &none     &none    &none    &kp BSPC
+   &kp LALT   &kp F12  &kp F7 &kp F8 &kp F9 &kp SYSREQ          &none  &none     &none     &none    &none    &kp BSPC
    &kp LCTRL  &kp F11  &kp F4 &kp F5 &kp F6 &kp SLCK            &none  &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &none
    &kp LSHFT  &kp F10  &kp F1 &kp F2 &kp F3 &kp PAUSE_BREAK     &none  &none     &none     &none    &none    &none
                               &kp K_MENU &kp SPC &kp TAB        &none  &none   &none
